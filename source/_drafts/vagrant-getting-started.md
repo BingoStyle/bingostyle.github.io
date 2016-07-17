@@ -31,7 +31,25 @@ config.vm.box_check_update = false
 % vagrant ssh #若成功，则意味着连上了虚拟环境了
 ```
 
+使用同步功能:
 
+默认情况下，client os中的/vagrant目录与host os初始化目录同步，也就是说虚拟系统中的/vagrant与宿主系统初始化vagrant项目时目录同步。比如：
+
+* 在宿主系统中
+
+  ```vagrant_project touch abc
+  vagrant_project touch abc
+  ```
+
+  则虚拟系统中/vagrant目录下则会多出abc文件。
+
+* 在虚拟系统中
+
+  ```
+  [vagrant@localhost /]$ touch /vagrant/foo
+  ```
+
+  则宿主系统中vagrant_project下则会多出foo文件。
 
 
 
