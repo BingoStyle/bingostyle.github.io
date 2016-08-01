@@ -244,7 +244,7 @@
               
                 
                 <a class="post-title-link" href="/using-textappearance/" itemprop="url">
-                  using-textappearance
+                  该怎样使用textappearance属性？
                 </a>
               
             
@@ -313,11 +313,11 @@
       
         
           
-            <p><a href="http://blog.danlew.net/2014/11/19/styles-on-android/" target="_blank" rel="external">http://blog.danlew.net/2014/11/19/styles-on-android/</a><br>文中提到尽可能使用textAppearance</p>
+            <p>在阅读<a href="http://blog.danlew.net/2014/11/19/styles-on-android/" target="_blank" rel="external">http://blog.danlew.net/2014/11/19/styles-on-android/</a> 时，文中提到尽可能使用textAppearance</p>
 <blockquote>
 <p><strong>Rule #4: Use text appearance when possible.</strong></p>
 </blockquote>
-<p>那么问题来了，当textAppearance属性值对应的样式和style属性值的样式都有定义时，会如何呢？<br>来来来，让实践出真知！<br>设定一个TextView的属性如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">android:textColor=&quot;#ffffff&quot;</div><div class="line">android:textAppearance=&quot;@style/TitleAppearance&quot;</div></pre></td></tr></table></figure></p>
+<p>那么问题来了，该如何使用呢？当textAppearance属性值对应的样式和style属性值的样式都有定义时，会如何呢？<br>来来来，带着问题上路，让实践告诉我们！<br>设定一个TextView的属性如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">android:textColor=&quot;#ffffff&quot;</div><div class="line">android:textAppearance=&quot;@style/TitleAppearance&quot;</div></pre></td></tr></table></figure></p>
 <p>其中的TitleAppearance如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;style name=&quot;TitleAppearance&quot; parent=&quot;TextAppearance.AppCompat&quot;&gt;</div><div class="line">    &lt;item name=&quot;android:textColor&quot;&gt;@color/colorAccent&lt;/item&gt;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
 <p>最后应用的还是<code>android:textColor=&quot;#ffffff&quot;</code>这一声明。<br>另外，文章中提到的另一点也是值得注意的</p>
 <blockquote>
