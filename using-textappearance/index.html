@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="android,textappearance," />
 
 
 
@@ -84,15 +84,28 @@
 
 
 
-<meta name="description" content="未来是你的">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bingo">
-<meta property="og:url" content="https://bingostyle.github.io/index.html">
+<meta name="description" content="http://blog.danlew.net/2014/11/19/styles-on-android/文中提到尽可能使用textAppearance
+
+Rule #4: Use text appearance when possible.
+
+那么问题来了，当textAppearance属性值对应的样式和style属性值的样式都有定义时，会如何呢？来来来，让实践出真知！设定一个TextView的属">
+<meta property="og:type" content="article">
+<meta property="og:title" content="using-textappearance">
+<meta property="og:url" content="https://bingostyle.github.io/using-textappearance/index.html">
 <meta property="og:site_name" content="Bingo">
-<meta property="og:description" content="未来是你的">
+<meta property="og:description" content="http://blog.danlew.net/2014/11/19/styles-on-android/文中提到尽可能使用textAppearance
+
+Rule #4: Use text appearance when possible.
+
+那么问题来了，当textAppearance属性值对应的样式和style属性值的样式都有定义时，会如何呢？来来来，让实践出真知！设定一个TextView的属">
+<meta property="og:updated_time" content="2016-08-01T12:34:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bingo">
-<meta name="twitter:description" content="未来是你的">
+<meta name="twitter:title" content="using-textappearance">
+<meta name="twitter:description" content="http://blog.danlew.net/2014/11/19/styles-on-android/文中提到尽可能使用textAppearance
+
+Rule #4: Use text appearance when possible.
+
+那么问题来了，当textAppearance属性值对应的样式和style属性值的样式都有定义时，会如何呢？来来来，让实践出真知！设定一个TextView的属">
 
 
 
@@ -110,7 +123,7 @@
   };
 </script>
 
-  <title> Bingo </title>
+  <title> using-textappearance | Bingo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +144,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -220,9 +231,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -242,10 +253,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/using-textappearance/" itemprop="url">
-                  using-textappearance
-                </a>
+                using-textappearance
               
             
           </h1>
@@ -311,9 +319,7 @@
       
 
       
-        
-          
-            <p><a href="http://blog.danlew.net/2014/11/19/styles-on-android/" target="_blank" rel="external">http://blog.danlew.net/2014/11/19/styles-on-android/</a><br>文中提到尽可能使用textAppearance</p>
+        <p><a href="http://blog.danlew.net/2014/11/19/styles-on-android/" target="_blank" rel="external">http://blog.danlew.net/2014/11/19/styles-on-android/</a><br>文中提到尽可能使用textAppearance</p>
 <blockquote>
 <p><strong>Rule #4: Use text appearance when possible.</strong></p>
 </blockquote>
@@ -326,271 +332,60 @@
 <p>实践中通过继承<code>TextAppearance.AppCompat.Large</code>，结果也确实是没有将<code>TextAppearance.AppCompat.Large</code>中的设置继承下来，文本的大小并没有受影响。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;style name=&quot;TitleAppearance&quot; parent=&quot;TextAppearance.AppCompat.Large&quot;&gt;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
 <p>综合之前的实践，那么应该怎样来使用这个属性呢？<br>两者都定义冲突，反而是style中的样式获胜，也就是说两者同时声明时，如果style中也包含针对text相关属性设置时，textAppearance属性的定义就是多余的。由此得出，两者的关注点不同，textAppearance作为一种更具体（针对text）的样式，应该作为style的补充，即专门针对text，而普通style中则不应该有针对text的相关设定为好。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/named-provision/" itemprop="url">
-                  命名provision的使用
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-27T20:44:31+08:00" content="2016-07-27">
-              2016-07-27
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/development/" itemprop="url" rel="index">
-                    <span itemprop="name">development</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/android/" rel="tag">#android</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/named-provision/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="named-provision/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/textappearance/" rel="tag">#textappearance</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>除了用provisioning来安装软件外，有些时候也需要有针对的执行一些脚本，比如部署或者配置变更需重启某些软件，这时，命名Provision就能派上用场了。</p>
-<h2 id="命名Provision的声明和使用"><a href="#命名Provision的声明和使用" class="headerlink" title="命名Provision的声明和使用"></a>命名Provision的声明和使用</h2><p><a href="https://www.vagrantup.com/docs/provisioning/basic_usage.html" target="_blank" rel="external">官方文档</a>对命名provisioning的描述，如下：</p>
-<blockquote>
-<p>Provisioners can also be named (since 1.7.0). These names are used cosmetically for output as well as overriding provisioner settings (covered further below). An example of naming provisioners is shown below<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Vagrant.configure(&quot;2&quot;) do |config|</div><div class="line">  # ... other configuration</div><div class="line">  config.vm.provision &quot;bootstrap&quot;, type: &quot;shell&quot; do |s|</div><div class="line">    s.inline = &quot;echo hello&quot;</div><div class="line">  end</div><div class="line">end</div></pre></td></tr></table></figure></p>
-<p>Naming provisioners is simple. The first argument toconfig.vm.provision becomes the name, and then a type option is used to specify the provisioner type, such as type: “shell” above.</p>
-</blockquote>
-<p>版本1.7开始支持这种方式的，我所用的版本1.8.4是支持的。声明方式也就是在参数最前新增一个名称参数，比如示例中<code>onfig.vm.provision &quot;bootstrap&quot;, type: &quot;shell&quot; do |s|</code>的”bootstrap”。</p>
-<p>知道如何声明了，那该如何执行命名provisioning呢？继续阅读<a href="https://www.vagrantup.com/docs/provisioning/basic_usage.html" target="_blank" rel="external">官方文档</a></p>
-<blockquote>
-<p>The arguments to –provision-with  can be the provisioner type (such as “shell”) or the provisioner name (such as “bootstrap” from above).</p>
-</blockquote>
-<p>结果就是通过<code>vagrant provision --provision-with bootstrap</code>运行</p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.vagrantup.com/docs/provisioning/basic_usage.html" target="_blank" rel="external">provisioning基本用法</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/named-provision/" rel="next" title="命名provision的使用">
+                <i class="fa fa-chevron-left"></i> 命名provision的使用
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/hello/" itemprop="url">
-                  Hello World
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-17T16:01:56+08:00" content="2016-07-17">
-              2016-07-17
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/hello/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="hello/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p><a href="https://pages.github.com" target="_blank" rel="external">github pages</a>都折腾几回了，这次就算正式开始了。记录点学习笔记什么的，包括编程、摄影及其他。</p>
-<p>这次选择了<a href="https://hexo.io" target="_blank" rel="external">Hexo</a>而不是<a href="http://jekyllcn.com" target="_blank" rel="external">Jekyll</a>，在于hexo依赖更少，node即可，所以嘛，为啥还要去折腾ruby、gem那些呢！</p>
-<p>就这样开始吧, GoGoGo!</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -598,6 +393,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="using-textappearance/"
+           data-title="using-textappearance" data-url="https://bingostyle.github.io/using-textappearance/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -617,8 +420,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -668,6 +480,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -771,6 +594,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
