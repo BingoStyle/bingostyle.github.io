@@ -28,4 +28,6 @@ tags:laravel
 
 通过`composer global require "laravel/installer"`全局安装laravel安装器，成功后还需进一步其执行文件的路径`~/.composer/vendor/bin`加入环境变量中，这时就可以在终端执行laravel命令了。
 
-先来创建laravel项目吧，通过`laravel new simple`创建了一个名为simple的项目，执行后，请耐心等待
+先来创建laravel项目吧，通过`laravel new simple`创建了一个名为simple的项目，执行后，请耐心等待 :)
+
+[注意：实践中发现通过通过composer方式针对laravel多版本更好，参考[how-to-install-laravel-application-5-and-4](https://laradevtips.com/2016/08/24/how-to-install-laravel-application-5-and-4/), 如创建5.1版本只需`composer create-project laravel/laravel simple2 5.1.*`]
