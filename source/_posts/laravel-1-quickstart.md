@@ -20,8 +20,12 @@ tags:laravel
 	```
 如果上面步骤都没错的话，则可以在终端使用composer命令了。
 
+由于某些不可告人的原因(你懂的!)，配置[composer镜像](http://pkg.phpcomposer.com/)，以加速依赖的下载,执行
+`composer config -g repo.packagist composer https://packagist.phpcomposer.com`即可。
+
 ### Laravel的项目创建
 [Laravel中文文档](http://www.golaravel.com/laravel/docs/5.1/)中提到两种方式来创建Laravel项目。一是通过Laravel安装器，另外一种就是通过composer，在此我选择了laravel安装器方式，因为文中提及此种方式更快。
 
 通过`composer global require "laravel/installer"`全局安装laravel安装器，成功后还需进一步其执行文件的路径`~/.composer/vendor/bin`加入环境变量中，这时就可以在终端执行laravel命令了。
 
+先来创建laravel项目吧，通过`laravel new simple`创建了一个名为simple的项目，执行后，请耐心等待
